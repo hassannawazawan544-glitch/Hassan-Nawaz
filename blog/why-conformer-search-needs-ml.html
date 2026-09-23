@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Conformer Search Needs Machine Learning — Hassan Nawaz</title>
+<meta name="description" content="Classical conformer search methods scale poorly with molecular size. Here's how AI-enhanced meta-dynamics changes the picture.">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="../index.html#top" class="brand">Hassan <span>Nawaz</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#education">Education</a>
+      <a href="../index.html#conferences">Conferences</a>
+      <a href="index.html">Blog</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../cv/hassan-cv.pdf" class="nav-cta" target="_blank" rel="noopener">Curriculum Vitae</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.6"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="post-header">
+    <div class="container">
+      <span class="eyebrow">Machine Learning Potentials</span>
+      <h1>Why Conformer Search Needs Machine Learning</h1>
+      <p class="post-meta">May 12, 2026</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container post-body">
+      <p>Conformational search sits at the foundation of almost every downstream computational chemistry workflow — from predicting NMR spectra to estimating binding affinities. Yet the search itself remains one of the field's most stubborn bottlenecks.</p>
+
+      <h2>The scaling problem</h2>
+      <p>Classical approaches, whether systematic torsion scans or stochastic methods, all face the same enemy: combinatorial explosion. As the number of rotatable bonds grows, the conformational space grows exponentially, and exhaustive sampling quickly becomes intractable.</p>
+      <p>Meta-dynamics (MTD) approaches, like those implemented in CREST, address this by biasing molecular dynamics trajectories away from already-visited regions of conformational space. This works well, but the underlying force field still has to evaluate energies and gradients for every step of every trajectory — and the accuracy of the search is bounded by the accuracy of that force field.</p>
+
+      <h2>Where machine learning fits in</h2>
+      <p>This is where machine learning interatomic potentials (MLIPs) — and methods like AIQM — change the equation. Replacing a classical force field with a fast, near-quantum-accuracy surrogate lets the search explore more of the relevant chemical space without sacrificing the energetic fidelity needed to rank conformers correctly.</p>
+      <p>In our work implementing an AI-enhanced MTD algorithm within MLatom, the goal has been straightforward to state and hard to achieve: keep the breadth of search that meta-dynamics is good at, while raising the accuracy ceiling closer to what a full quantum chemistry calculation would give you.</p>
+
+      <h2>What's next</h2>
+      <p>Benchmarking against CREST across a diverse molecular test set has been the natural next step, and early results are encouraging. I'll share more details — including how the method performs on more flexible and larger systems — as the manuscript comes together.</p>
+
+      <p><a class="back-link" href="index.html">← Back to all posts</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Hassan Nawaz. Built with HTML, CSS &amp; JS — deployed on GitHub Pages.</p>
+    <div class="footer-links">
+      <a href="../index.html#top">Home</a>
+      <a href="../cv/hassan-cv.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="mailto:hassanchemist@yahoo.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
