@@ -6,43 +6,39 @@
 <title>Starting the PhD Journey: From Xiamen to HKUST — Hassan Nawaz</title>
 <meta name="description" content="Reflections on finishing a Master's in AI-enhanced computational chemistry and what comes next at HKUST.">
 <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="nav-inner">
-    <a href="../index.html#top" class="brand">Hassan <span>Nawaz</span></a>
-    <nav class="nav-links" id="navLinks">
-      <a href="../index.html#about">About</a>
-      <a href="../index.html#research">Research</a>
-      <a href="../index.html#publications">Publications</a>
-      <a href="../index.html#education">Education</a>
-      <a href="../index.html#conferences">Conferences</a>
-      <a href="index.html">Blog</a>
-      <a href="../index.html#contact">Contact</a>
-      <a href="../cv/hassan-cv.pdf" class="nav-cta" target="_blank" rel="noopener">Curriculum Vitae</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.6"/></svg>
-    </button>
+  <div class="site-header-inner">
+    <a href="../index.html" class="site-title">Hassan Nawaz</a>
+    <p class="site-tagline">AI-ENHANCED COMPUTATIONAL CHEMISTRY | INCOMING PH.D. STUDENT, HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY (HKUST)</p>
   </div>
+  <nav class="main-navigation">
+    <div class="container" style="display:flex; align-items:center;">
+      <ul class="nav-list" id="navList">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../conferences.html">Conferences</a></li>
+        <li><a href="index.html" class="active">Blog</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+    </div>
+  </nav>
 </header>
 
 <main>
-  <section class="post-header">
-    <div class="container">
-      <span class="eyebrow">PhD Journey</span>
+  <div class="page-wrap with-sidebar">
+    <article class="content-card post-body">
+      <span class="post-cat-top">PhD Journey</span>
       <h1>Starting the PhD Journey: From Xiamen to HKUST</h1>
-      <p class="post-meta">April 2, 2026</p>
-    </div>
-  </section>
+      <p class="post-byline">Hassan Nawaz &nbsp;·&nbsp; April 2, 2026</p>
 
-  <section>
-    <div class="container post-body">
       <p>I'm writing this from the tail end of my Master's at Xiamen University, with an offer to begin a Ph.D. in Chemical and Biological Engineering at HKUST later this year. It feels like a good moment to write down what got me here.</p>
 
       <h2>Finding the intersection</h2>
@@ -51,7 +47,7 @@
 
       <h2>What I'm taking with me</h2>
       <p>A few things I'll carry into the Ph.D.:</p>
-      <ul>
+      <ul class="plain-list">
         <li>A working knowledge of MLatom and the AIQM family of methods, built from the ground up rather than treated as a black box.</li>
         <li>A healthy respect for benchmarking — a method that looks good on one molecule and falls apart on the next isn't a method yet.</li>
         <li>The understanding that infrastructure work (data pipelines, reproducible workflows, careful version control) is not separate from "real research" — it's what makes real research possible.</li>
@@ -61,19 +57,19 @@
       <p>HKUST's Chemical and Biological Engineering program gives me room to push further into the engineering side of scientific machine learning: building models and tools that other researchers can actually rely on, not just methods that work in a single paper's supplementary information.</p>
       <p>More on that as it unfolds.</p>
 
-      <p><a class="back-link" href="index.html">← Back to all posts</a></p>
-    </div>
-  </section>
+      <p><a href="index.html">← Back to all posts</a></p>
+    </article>
+
+    <aside class="sidebar" id="sidebar"></aside>
+  </div>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> Hassan Nawaz. Built with HTML, CSS &amp; JS — deployed on GitHub Pages.</p>
-    <div class="footer-links">
-      <a href="../index.html#top">Home</a>
-      <a href="../cv/hassan-cv.pdf" target="_blank" rel="noopener">CV</a>
-      <a href="mailto:hassanchemist@yahoo.com">Email</a>
-    </div>
+  <div class="container">
+    &copy; <span id="year"></span> Hassan Nawaz &nbsp;·&nbsp;
+    <a href="mailto:hassanchemist@yahoo.com">Email</a> &nbsp;·&nbsp;
+    <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
   </div>
 </footer>
 
