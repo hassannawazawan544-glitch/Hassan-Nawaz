@@ -4,108 +4,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Hassan Nawaz</title>
-<meta name="description" content="About Hassan Nawaz — background, education, awards, and contact.">
+<meta name="description" content="About Hassan Nawaz — education, awards, experience, and contact.">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="site-header-inner">
-    <a href="index.html" class="site-title">Hassan Nawaz</a>
-    <p class="site-tagline">AI-ENHANCED COMPUTATIONAL CHEMISTRY | INCOMING PH.D. STUDENT, HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY (HKUST)</p>
-  </div>
-  <nav class="main-navigation">
-    <div class="container" style="display:flex; align-items:center;">
-      <ul class="nav-list" id="navList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="conferences.html">Conferences</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-      </ul>
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Hassan Nawaz<span class="dot">.</span></a>
+    <nav class="nav-links" id="navList">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.6"/></svg>
       </button>
     </div>
-  </nav>
+  </div>
 </header>
 
 <main>
-  <div class="page-wrap with-sidebar">
-    <article class="content-card">
-      <h1>About</h1>
-
-      <div class="profile-photo-row">
-        <img src="images/hassan-profile.jpg" alt="Portrait of Hassan Nawaz">
-        <div>
-          <p><strong>Hassan Nawaz</strong></p>
-          <p>Master's Student, College of Chemistry and Chemical Engineering, Xiamen University, China — with Prof. Pavlo O. Dral.</p>
-          <p>Incoming Ph.D. Student, Chemical and Biological Engineering, Hong Kong University of Science and Technology (HKUST), from September 2026 — with Prof. Hanyu Gao.</p>
-          <p>hassanchemist@yahoo.com | Xiamen, Fujian, China</p>
+  <section style="padding-top:64px; padding-bottom:0;">
+    <div class="container about-grid reveal">
+      <div class="about-text">
+        <span class="eyebrow">About</span>
+        <h1 style="font-size:2.4rem;">Hassan Nawaz</h1>
+        <p>PhD Student, Chemical &amp; Biomolecular Engineering, Hong Kong University of Science and Technology (HKUST) — advised by Prof. Hanyu Gao. Formerly M.Sc. Physical Chemistry at Xiamen University, advised by Prof. Pavlo O. Dral.</p>
+        <p>My PhD work focuses on <strong>AI and machine learning for copolymers</strong> — using data-driven methods to understand and design copolymer structure–property relationships. This builds on my Master's research on AI-enhanced computational chemistry: autonomous simulation platforms, LLM agents for chemistry, and machine learning interatomic potentials developed and benchmarked within the MLatom and Aitomia ecosystems.</p>
+        <p>I'm originally from Pakistan, completed my B.Sc. in Analytical Chemistry at the University of Agriculture, Faisalabad, and I'm currently based in Xiamen, China, ahead of relocating to Hong Kong in September 2026.</p>
+        <p class="pull-quote">Contact: <a href="mailto:hassanchemist@yahoo.com">hassanchemist@yahoo.com</a></p>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo" style="aspect-ratio:4/4.8;">
+          <img src="images/hassan-profile.jpg" alt="Portrait of Hassan Nawaz">
         </div>
       </div>
+    </div>
+  </section>
 
-      <p>I am a computational chemistry researcher working at the interface of artificial intelligence and quantum chemistry. My research focuses on developing machine learning methods that accelerate molecular simulations and enable next-generation chemical discovery — from neural network interatomic potentials to AI-guided conformational search.</p>
-      <p>I am currently completing my Master's degree at Xiamen University, where my work centers on AI-enhanced conformer search algorithms and machine learning interatomic potentials (MLIPs), developed and benchmarked within the MLatom and Aitomia ecosystems. In 2026 I will begin my Ph.D. in Chemical and Biological Engineering at the Hong Kong University of Science and Technology.</p>
-      <p>My long-term goal is to advance scientific machine learning methodologies that transform how molecules and materials are designed — and to build the kind of research group where that work happens in the open, in close collaboration with experimentalists.</p>
+  <section id="education">
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="eyebrow">Education</span>
+        <h2>Vita</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-period">Sep 2026 – Jul 2030</div>
+          <h3>PhD in Chemical and Biomolecular Engineering <span class="status-pill">Starting Sept. 2026</span></h3>
+          <p class="timeline-inst">Hong Kong University of Science and Technology, Hong Kong</p>
+          <p class="timeline-meta"><strong>Advisor:</strong> Prof. Hanyu Gao</p>
+          <p class="timeline-desc muted">Research focus: AI and machine learning for copolymers.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">Sep 2024 – Jul 2026</div>
+          <h3>M.Sc. in Physical Chemistry <span class="status-pill">GPA 3.9/4 · Top of class</span></h3>
+          <p class="timeline-inst">Xiamen University, China</p>
+          <p class="timeline-meta"><strong>Advisor:</strong> Prof. Pavlo O. Dral</p>
+          <p class="timeline-meta"><strong>Thesis:</strong> "Exploring Automation and Acceleration in Computational Chemistry with Artificial Intelligence and Machine Learning Potentials"</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">Sep 2020 – Jun 2024</div>
+          <h3>B.Sc. in Analytical Chemistry <span class="status-pill">GPA 3.71/4 · Top 5</span></h3>
+          <p class="timeline-inst">University of Agriculture, Faisalabad, Pakistan</p>
+          <p class="timeline-meta"><strong>Advisor:</strong> Raja Adil Sarfraz</p>
+          <p class="timeline-meta"><strong>Final-year report:</strong> "Revolutionizing quantum and computational chemistry using machine learning"</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h2 id="education">Vita</h2>
-      <table class="vita-table">
-        <tr><td>2026–2030</td><td>Ph.D. in Chemical and Biological Engineering, Hong Kong University of Science and Technology, Hong Kong. Supervisor: Prof. Hanyu Gao. <em>(Starting September 2026)</em></td></tr>
-        <tr><td>2024–2026</td><td>Master's in Physical Chemistry, Xiamen University, China. Supervisor: Prof. Pavlo O. Dral. Thesis: "Exploring Automation and Acceleration of Computational Chemistry with Artificial Intelligence and Machine Learning Potentials." CGPA: 3.93/4.0.</td></tr>
-        <tr><td>2020–2024</td><td>B.Sc. in Analytical Chemistry, University of Agriculture, Faisalabad, Pakistan. Supervisor: Dr. Raja Adil Sarfraz. Thesis: "Revolutionizing Quantum and Computational Chemistry with Artificial Intelligence: A Comprehensive Study." CGPA: 3.71/4.0.</td></tr>
-        <tr><td>2018–2020</td><td>Higher Secondary Education (FSc Pre-Medical), Superior Group of Colleges, Shahkot, Pakistan. Result: 89%.</td></tr>
-        <tr><td>2016–2018</td><td>Matriculation (Secondary Education), The Educators Radiant Campus, Sangla Hill (Beaconhouse School System), Pakistan. Result: 94%.</td></tr>
-      </table>
+  <section class="section-soft" id="experience">
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="eyebrow">Experience</span>
+        <h2>Work Experience</h2>
+      </div>
+      <div class="card">
+        <div class="exp-head">
+          <h3>Research Intern, Central Hi-Tech Lab</h3>
+          <span class="exp-date">Feb 2023 – Jul 2023</span>
+        </div>
+        <p class="exp-context">University of Agriculture, Faisalabad · Advisors: Raja Adil Sarfraz, Raziya Nadeem, Fazil Shah</p>
+        <ul>
+          <li>Development of novel methodologies for the identification of adulterants in milk.</li>
+          <li>Hands-on training on Scanning Electron Microscope (SEM), High-Performance Liquid Chromatography (HPLC), Gas Chromatography (GC), Light Microscopy (LM), Atomic Absorption Spectroscopy (AAS), UV-visible spectroscopy, and Flame Photometry (FP).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-      <h2 id="awards">Awards &amp; Scholarships</h2>
-      <ul class="plain-list">
-        <li><strong>HKUST Ph.D. Recruitment Award</strong> (2026) — awarded in recognition of excellence in research and leadership skills during the Ph.D. recruitment process at HKUST.</li>
-        <li><strong>Postgraduate Scholarship, HKUST</strong> (2026) — in support of incoming doctoral studies in Chemical and Biological Engineering.</li>
-        <li><strong>Chinese Government High Level Postgraduate Scholarship</strong> (2024) — in support of Master's studies at Xiamen University, China.</li>
-        <li><strong>Ehsas Undergraduate Scholarship</strong> (2023) — in support of undergraduate studies at University of Agriculture, Faisalabad, Pakistan.</li>
-        <li><strong>Merit Base Scholarship for Higher Achievers</strong> (2022) — in support of high school education at Superior Group of Colleges, Shahkot, Pakistan.</li>
+  <section id="awards">
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="eyebrow">Recognition</span>
+        <h2>Awards &amp; Scholarships</h2>
+      </div>
+      <ul class="awards-list">
+        <li class="award-item">
+          <span class="award-date">Apr 2026</span>
+          <div><h3>HKUST RedBird PhD Recruitment Award 2026-27</h3><p>Awarded during the PhD recruitment process at the Hong Kong University of Science and Technology.</p></div>
+        </li>
+        <li class="award-item">
+          <span class="award-date">Feb 2026</span>
+          <div><h3>Postgraduate Scholarship at HKUST</h3><p>In support of incoming doctoral studies in Chemical and Biomolecular Engineering.</p></div>
+        </li>
+        <li class="award-item">
+          <span class="award-date">Sep 2024</span>
+          <div><h3>Chinese Government Scholarship</h3><p>In support of Master's studies at Xiamen University, China.</p></div>
+        </li>
+        <li class="award-item">
+          <span class="award-date">Sep 2021</span>
+          <div><h3>Ehsas Undergraduate Merit Base Scholarship</h3><p>In support of undergraduate studies at the University of Agriculture, Faisalabad, Pakistan.</p></div>
+        </li>
+        <li class="award-item">
+          <span class="award-date">Apr 2018</span>
+          <div><h3>Higher Secondary Education Bright Student Scholarship</h3><p>Awarded for academic performance in higher secondary education.</p></div>
+        </li>
       </ul>
+    </div>
+  </section>
 
-      <h2 id="skills">Skills &amp; Tools</h2>
-      <p>
-        <span class="tag-inline">Python</span><span class="tag-inline">Bash</span><span class="tag-inline">Git</span>
-        <span class="tag-inline">PyTorch</span><span class="tag-inline">TorchANI</span><span class="tag-inline">MLatom</span>
-        <span class="tag-inline">ORCA</span><span class="tag-inline">CREST</span><span class="tag-inline">xTB</span>
-        <span class="tag-inline">Gaussian</span><span class="tag-inline">VASP</span><span class="tag-inline">MRCC</span>
-        <span class="tag-inline">Linux</span><span class="tag-inline">HPC Clusters</span><span class="tag-inline">Parallel Computing</span>
-      </p>
+  <section class="section-soft" id="skills">
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="eyebrow">Skills</span>
+        <h2>Languages &amp; Tools</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;">
+        <div>
+          <h3 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-faint); font-family:var(--sans); margin-bottom:14px;">Languages</h3>
+          <ul class="tag-list">
+            <li class="tag">English (fluent)</li>
+            <li class="tag">Urdu (native)</li>
+            <li class="tag">Punjabi</li>
+            <li class="tag">Arabic</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-faint); font-family:var(--sans); margin-bottom:14px;">Computer</h3>
+          <ul class="tag-list">
+            <li class="tag">Python</li>
+            <li class="tag">Linux</li>
+            <li class="tag">LaTeX</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h2 id="collaborations">Collaborations</h2>
-      <p>I'm always glad to connect with researchers and groups working on AI for chemistry, machine learning potentials, or quantum chemistry methods.</p>
-      <p><strong>Prof. Ireneusz Grabowski &amp; Dr. Szymon Śmiga</strong> — Faculty of Physics, Astronomy and Informatics, Nicolaus Copernicus University in Toruń, Poland. Developing machine learning potentials capable of exceeding standard density functional theory accuracy.</p>
+  <section id="collaborations">
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="eyebrow">Collaborations</span>
+        <h2>Working together</h2>
+        <p>I'm always glad to connect with researchers and groups working on AI for chemistry and materials, machine learning potentials, or polymer informatics.</p>
+      </div>
+      <div style="display:grid; gap:18px;">
+        <div class="card">
+          <h3 style="font-size:1.05rem; margin-bottom:4px;">Prof. Ireneusz Grabowski &amp; Dr. Szymon Śmiga</h3>
+          <p class="muted" style="font-size:0.88rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:10px;">Nicolaus Copernicus University, Toruń, Poland</p>
+          <p style="margin:0;">Development of machine learning interatomic potentials aimed at surpassing standard DFT accuracy. <em>(First-author manuscript in preparation.)</em></p>
+        </div>
+        <div class="card">
+          <h3 style="font-size:1.05rem; margin-bottom:4px;">Dr. Arif Ullah</h3>
+          <p class="muted" style="font-size:0.88rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:10px;">Anhui University, China</p>
+          <p style="margin:0;">Atomistic simulations and ML-assisted screening for topological materials discovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h2 id="contact">Contact</h2>
-      <p>Open to research collaborations, questions about the work on this site, or conversations about AI for chemistry. The fastest way to reach me is email.</p>
-      <ul class="plain-list">
-        <li>Email: <a href="mailto:hassanchemist@yahoo.com">hassanchemist@yahoo.com</a></li>
-        <li>Google Scholar: <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com/citations?user=_JOKn14AAAAJ</a></li>
-        <li>GitHub: <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">github.com/hassan-nawaz-awan</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/hassan-nawaz-a5059b302" target="_blank" rel="noopener">linkedin.com/in/hassan-nawaz-a5059b302</a></li>
-        <li>ORCID: <a href="https://orcid.org/0009-0008-6332-7162" target="_blank" rel="noopener">0009-0008-6332-7162</a></li>
-      </ul>
-    </article>
-
-    <aside class="sidebar" id="sidebar"></aside>
-  </div>
+  <section class="section-soft" id="contact">
+    <div class="container contact-grid reveal">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Get in touch</h2>
+        <p class="muted">Open to research collaborations, questions about the work on this site, or conversations about AI for chemistry and materials. The fastest way to reach me is email.</p>
+      </div>
+      <div>
+        <div class="contact-detail"><span class="label">Email</span><a href="mailto:hassanchemist@yahoo.com">hassanchemist@yahoo.com</a></div>
+        <div class="contact-detail"><span class="label">Location</span><span>Xiamen, China → Hong Kong (from Sep 2026)</span></div>
+        <div class="contact-detail">
+          <span class="label">Elsewhere</span>
+          <div class="social-row">
+            <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/hassan-nawaz-a5059b302" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://orcid.org/0009-0008-6332-7162" target="_blank" rel="noopener">ORCID</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    &copy; <span id="year"></span> Hassan Nawaz &nbsp;·&nbsp;
-    <a href="mailto:hassanchemist@yahoo.com">Email</a> &nbsp;·&nbsp;
-    <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
-    <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Hassan Nawaz. Built with HTML, CSS &amp; JS — deployed on GitHub Pages.</p>
+    <div class="footer-links">
+      <a href="mailto:hassanchemist@yahoo.com">Email</a>
+      <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+    </div>
   </div>
 </footer>
 
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
 </body>
 </html>

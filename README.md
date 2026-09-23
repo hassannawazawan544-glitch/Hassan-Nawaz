@@ -1,44 +1,46 @@
 # Hassan Nawaz — Academic Website
 
 Personal academic website for Hassan Nawaz — plain HTML/CSS/JS, no build step, ready for
-GitHub Pages. Styled to match [dr-dral.com](http://dr-dral.com/) (light blue-gray page
-background, white content cards, sidebar with Search + News & Posts widgets, "Table of
-Contents" boxes on longer pages) as a true multi-page site rather than a single scrolling page.
+GitHub Pages. Modern editorial academic style inspired by MIT/ETH-style personal research
+sites: serif display type (Fraunces) + clean sans body (Inter), scroll-reveal animation,
+animated stat counters, dark mode, and a subtle animated "polymer chain" motif in the hero
+(a nod to the AI-for-copolymers research focus). All content is sourced from `Hassan_CV.pdf`.
 
 ## Structure
 
 ```
-index.html          Home
-about.html           About (bio, Vita table, awards, skills, collaborations, contact)
-research.html        Research (four threads + flagship project: Aitomia)
-publications.html    Publications (ORCID/Scholar links, numbered list by category)
-conferences.html     Conferences (numbered list with photo thumbnails + lightbox)
+index.html          Home — hero, animated stats, research snapshot, Aitomia, news
+about.html           About — bio, Vita, work experience, awards, skills, collaborations, contact
+research.html        Research — full research-experience write-ups (from the CV) + Aitomia
+publications.html    Publications — journal article with correct author/co-first-author order
+conferences.html     Conferences — 11 talks/posters/workshops with photo thumbnails + lightbox
 blog/
   index.html          Blog listing (card grid)
   starting-the-phd-journey.html
   why-conformer-search-needs-ml.html
-css/style.css         All styling (CSS variables at the top control the palette)
-js/main.js            Mobile nav, sidebar widgets (Search + News & Posts), lightbox
+css/style.css         All styling (CSS variables at the top control the palette + dark mode)
+js/main.js            Dark mode toggle, mobile nav, scroll-reveal, stat counters, lightbox
 images/               Profile photo, conference photos, Aitomia screenshot, favicon
-cv/hassan-cv.pdf      ⚠️ placeholder — replace with your real CV (see below)
+cv/hassan-cv.pdf      Your real CV (served for download from the site)
 ```
 
 Every page shares the same header/nav and footer, duplicated per file since there's no
-build step. The right-hand sidebar (Search + News & Posts) is injected by `js/main.js`
-into any `<aside id="sidebar">` element, so it stays in sync across pages automatically.
+build step. `Hassan_CV.pdf` in the repo root is your original CV file kept for reference —
+`cv/hassan-cv.pdf` is the copy actually served/downloaded from the site; keep them in sync
+if you update your CV.
 
-## Before you deploy
+## Updating content
 
-1. **Replace the CV.** `cv/hassan-cv.pdf` is currently a placeholder (just a name/title,
-   not a real CV). Export your real CV as PDF and overwrite this file, keeping the same
-   filename.
-2. **Check the links** (Google Scholar, GitHub, LinkedIn, ORCID, email) across the pages —
-   they were carried over from your previous site; update anything that's changed.
-3. Add more publications by copying the `<li>` block inside `<ol class="pub-ol">` in
-   `publications.html`. Add more conference entries the same way in `conferences.html`.
-4. Add a new blog post by duplicating one of the files in `blog/`, then link it from
-   `blog/index.html` and from the `newsItems` array in `js/main.js` (so it shows in the
-   sidebar/home News & Posts list too).
+- **CV changed?** Re-export it and overwrite `cv/hassan-cv.pdf` (same filename), then
+  update the relevant facts (education, awards, experience) across `about.html` and
+  `research.html` to match.
+- **New publication:** copy the `<li class="pub-item">` block in `publications.html`.
+- **New conference/talk:** copy a `<li class="conf-card">` block in `conferences.html`.
+- **New blog post:** duplicate a file in `blog/`, link it from `blog/index.html`, and add
+  it to the news list in `index.html` and the `newsItems` (if reintroduced) or the News
+  section markup directly.
+- **Colors/theme:** edit the CSS variables at the top of `css/style.css` (`--accent`,
+  `--accent-2`, etc.) — both light and dark mode palettes are defined there.
 
 ## Deploy to GitHub Pages
 

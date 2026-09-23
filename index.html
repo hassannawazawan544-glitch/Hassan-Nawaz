@@ -3,115 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hassan Nawaz</title>
-<meta name="description" content="Hassan Nawaz — Master's student at Xiamen University, incoming Ph.D. student at HKUST. AI-enhanced computational chemistry.">
+<title>Hassan Nawaz — AI &amp; Machine Learning for Copolymers</title>
+<meta name="description" content="Hassan Nawaz — PhD student at HKUST working on AI and machine learning for copolymers, advised by Prof. Hanyu Gao. Former computational chemistry researcher at Xiamen University.">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="site-header-inner">
-    <a href="index.html" class="site-title">Hassan Nawaz</a>
-    <p class="site-tagline">AI-ENHANCED COMPUTATIONAL CHEMISTRY | INCOMING PH.D. STUDENT, HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY (HKUST)</p>
-  </div>
-  <nav class="main-navigation">
-    <div class="container" style="display:flex; align-items:center;">
-      <ul class="nav-list" id="navList">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="conferences.html">Conferences</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-      </ul>
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Hassan Nawaz<span class="dot">.</span></a>
+    <nav class="nav-links" id="navList">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.6"/></svg>
       </button>
     </div>
-  </nav>
+  </div>
 </header>
 
-<main>
-  <div class="page-wrap full-width-stack">
+<main id="top">
 
-    <section class="content-card">
-      <p class="hero-eyebrow">Master's Student · Xiamen University</p>
-      <h1 class="hero-title">Hassan Nawaz</h1>
-      <p class="hero-sub">AI-enhanced computational chemistry</p>
-      <p><strong>College of Chemistry and Chemical Engineering, Xiamen University, China</strong></p>
-      <span class="hero-status">Incoming Ph.D. Student, Hong Kong University of Science and Technology (HKUST) — with Prof. Hanyu Gao, from September 2026</span>
-      <div class="hero-actions">
-        <a href="cv/hassan-cv.pdf" class="btn btn-primary" target="_blank" rel="noopener">Curriculum Vitae</a>
-        <a href="about.html#contact" class="btn btn-outline">Get in touch</a>
-      </div>
-    </section>
-
-    <section class="content-card">
-      <div class="profile-photo-row" style="align-items:center;">
-        <img src="images/hassan-profile.jpg" alt="Hassan Nawaz presenting a poster at a conference">
-        <div>
-          <p style="margin:0;">Presenting research on AI agents for computational chemistry — Best Poster Award, the 35th Chinese Chemical Society (CCS) Congress, Chongqing, China, April 2026.</p>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <svg class="hero-chain" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30 340 Q100 260 60 190 T140 60" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+      <path d="M120 380 Q190 300 150 230 T230 100" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+      <path d="M220 400 Q290 320 250 250 T330 120" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+      <circle cx="30" cy="340" r="6"/><circle cx="60" cy="190" r="5"/><circle cx="140" cy="60" r="6"/>
+      <circle cx="120" cy="380" r="5"/><circle cx="150" cy="230" r="5"/><circle cx="230" cy="100" r="5"/>
+      <circle cx="220" cy="400" r="5"/><circle cx="250" cy="250" r="5"/><circle cx="330" cy="120" r="6"/>
+    </svg>
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-eyebrow-row">
+          <span class="status-dot"></span>
+          <span class="eyebrow" style="margin:0;">Incoming PhD Student · HKUST</span>
+        </div>
+        <h1>Hassan <span class="accent-word">Nawaz</span></h1>
+        <p class="hero-role">
+          PhD Student in <strong>Chemical &amp; Biomolecular Engineering</strong>, Hong Kong University of Science and Technology — advised by <strong>Prof. Hanyu Gao</strong><br>
+          M.Sc. Physical Chemistry, Xiamen University — advised by <strong>Prof. Pavlo O. Dral</strong>
+        </p>
+        <p class="hero-tagline">Teaching machines to understand — and design — the next generation of copolymers.</p>
+        <div class="hero-actions">
+          <a href="cv/hassan-cv.pdf" class="btn btn-primary" target="_blank" rel="noopener">Curriculum Vitae</a>
+          <a href="about.html#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/hassan-nawaz-a5059b302" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://orcid.org/0009-0008-6332-7162" target="_blank" rel="noopener">ORCID ↗</a>
         </div>
       </div>
-    </section>
-
-    <div class="home-columns">
-      <section class="content-card">
-        <h2 style="margin-top:0;">AI-Enhanced Computational Chemistry</h2>
-        <p>My research focuses on developing machine learning methods that accelerate molecular simulations and enable next-generation chemical discovery — from neural network interatomic potentials to AI-guided conformational search, developed and benchmarked within the MLatom and Aitomia ecosystems.</p>
-        <p><a href="research.html">Read more about my research ›</a></p>
-      </section>
-      <section class="content-card">
-        <h2 style="margin-top:0;">Featured Project</h2>
-        <p><strong>Aitomia</strong> — an agentic, AI-driven platform that integrates large language models, scientific workflows, and machine learning tools (MLatom, AIQM) to streamline computational chemistry research, published in the <em>Journal of Chemical Theory and Computation</em> (2026).</p>
-        <p><a href="publications.html">Read more ›</a></p>
-      </section>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="images/hassan-profile.jpg" alt="Portrait of Hassan Nawaz">
+        </div>
+        <div class="hero-photo-badge">Xiamen, China → Hong Kong<span>relocating September 2026</span></div>
+      </div>
     </div>
 
-    <section class="content-card">
-      <h2 style="margin-top:0;">News &amp; Posts</h2>
+    <div class="container">
+      <div class="stats-strip reveal">
+        <div class="stat-cell"><div class="stat-num" data-count="1">0</div><div class="stat-label">Publication (co-first author)</div></div>
+        <div class="stat-cell"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-label">Conferences &amp; talks</div></div>
+        <div class="stat-cell"><div class="stat-num" data-count="5">0</div><div class="stat-label">Research projects</div></div>
+        <div class="stat-cell"><div class="stat-num" data-count="5">0</div><div class="stat-label">Awards &amp; scholarships</div></div>
+      </div>
+    </div>
+  </section>
 
-      <div class="news-item-row">
-        <span class="wp-date">Apr 2026</span>
-        <div>
-          <a href="publications.html"><strong>JCTC:</strong> "Aitomia: An Agentic Framework for AI-Driven Atomistic and Quantum Chemical Simulations" published</a>
+  <section class="section-soft">
+    <div class="container about-grid reveal">
+      <div class="about-text">
+        <span class="eyebrow">Currently</span>
+        <h2>AI &amp; machine learning for copolymers</h2>
+        <p>My PhD research at HKUST focuses on developing AI and machine learning methods for understanding, predicting, and designing copolymers — building on a foundation in AI-enhanced computational chemistry and machine learning interatomic potentials developed during my Master's at Xiamen University under Prof. Pavlo O. Dral.</p>
+        <p>I'm broadly interested in how machine learning can compress the loop between a research question and a validated molecular or material design — whether that's a copolymer sequence, a reaction pathway, or a potential energy surface.</p>
+        <p><a href="research.html">See my full research background →</a></p>
+      </div>
+      <div class="about-aside">
+        <h3>Focus areas</h3>
+        <ul class="tag-list">
+          <li class="tag">AI for Copolymer Design</li>
+          <li class="tag">Machine Learning Potentials</li>
+          <li class="tag">Computational Chemistry</li>
+          <li class="tag">LLM Agents for Science</li>
+          <li class="tag">Molecular Discovery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Research Snapshot</span>
+        <h2>From copolymers to autonomous chemistry</h2>
+        <p>A quick look at the threads running through my work — see the Research page for the full picture, straight from my CV.</p>
+      </div>
+      <div class="research-grid reveal-stagger">
+        <div class="card">
+          <div class="card-num">01</div>
+          <h3>AI for Copolymer Design</h3>
+          <p>Current PhD research at HKUST: machine learning methods to predict and design copolymer structure–property relationships.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">02</div>
+          <h3>Machine Learning Potentials</h3>
+          <p>Developing MLIPs aimed at surpassing standard DFT accuracy — descriptor engineering, training, and rigorous benchmarking.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">03</div>
+          <h3>AI Agents for Science</h3>
+          <p>Fine-tuned domain LLMs (LoRA), RAG knowledge systems, and multi-agent workflows (LangGraph) for autonomous computational chemistry.</p>
+        </div>
+        <div class="card">
+          <div class="card-num">04</div>
+          <h3>Topological Materials</h3>
+          <p>First-principles DFT calculations and ML-assisted screening to discover new functional topological materials.</p>
         </div>
       </div>
-      <div class="news-item-row">
-        <span class="wp-date">Apr 2026</span>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="container reveal">
+      <div class="section-head" style="margin-bottom:28px;">
+        <span class="eyebrow">Flagship Project</span>
+        <h2>Aitomia</h2>
+      </div>
+      <div class="card" style="display:grid; grid-template-columns:1fr 1.2fr; gap:32px; align-items:center; padding:32px;">
+        <img src="images/aitomia.jpg" alt="Aitomia platform overview" style="border-radius:12px;">
         <div>
-          <a href="conferences.html">Best Poster Award at the 35th Chinese Chemical Society (CCS) Congress, Chongqing</a>
+          <p style="color:var(--ink-muted);">An agentic, AI-driven platform integrating large language models, scientific workflows, and machine learning tools (MLatom, AIQM) to streamline computational chemistry — from input generation to result interpretation. Published in <em>Journal of Chemical Theory and Computation</em>, 2026.</p>
+          <p style="color:var(--ink-muted); font-size:0.92rem;">Hu, J.; <strong>Nawaz, H.</strong>; Hou, Y. F.; et al. — Hu, Nawaz, and Hou contributed equally as co-first authors.</p>
+          <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:14px;">
+            <a href="https://github.com/dralgroup/aitomia/" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://doi.org/10.1021/acs.jctc.6c00591" target="_blank" rel="noopener">Paper ↗</a>
+            <a href="https://atom.xmu.edu.cn/login" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
         </div>
       </div>
-      <div class="news-item-row">
-        <span class="wp-date">May 12, 2026</span>
-        <div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="eyebrow">News</span>
+        <h2>Latest updates</h2>
+      </div>
+      <div style="display:grid; gap:0;">
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--border);">
+          <span class="muted" style="font-size:0.9rem;">2026</span>
+          <a href="publications.html">"Aitomia" published in the <em>Journal of Chemical Theory and Computation</em> — co-first author</a>
+        </div>
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--border);">
+          <span class="muted" style="font-size:0.9rem;">Mar 2026</span>
+          <a href="conferences.html">Poster presentation at the ACS Spring Meeting, Atlanta, Georgia</a>
+        </div>
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--border);">
+          <span class="muted" style="font-size:0.9rem;">May 12, 2026</span>
           <a href="blog/why-conformer-search-needs-ml.html">Why Conformer Search Needs Machine Learning</a>
         </div>
-      </div>
-      <div class="news-item-row">
-        <span class="wp-date">Apr 2, 2026</span>
-        <div>
+        <div style="display:grid; grid-template-columns:130px 1fr; gap:18px; padding:16px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+          <span class="muted" style="font-size:0.9rem;">Apr 2, 2026</span>
           <a href="blog/starting-the-phd-journey.html">Starting the PhD Journey: From Xiamen to HKUST</a>
         </div>
       </div>
+      <p style="margin-top:20px;"><a href="blog/index.html">See all posts →</a></p>
+    </div>
+  </section>
 
-      <p style="margin-top:18px;"><a href="blog/index.html">See all news &amp; posts ›</a></p>
-    </section>
-
-  </div>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    &copy; <span id="year"></span> Hassan Nawaz &nbsp;·&nbsp;
-    <a href="mailto:hassanchemist@yahoo.com">Email</a> &nbsp;·&nbsp;
-    <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
-    <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Hassan Nawaz. Built with HTML, CSS &amp; JS — deployed on GitHub Pages.</p>
+    <div class="footer-links">
+      <a href="mailto:hassanchemist@yahoo.com">Email</a>
+      <a href="https://github.com/hassan-nawaz-awan" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=_JOKn14AAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+    </div>
   </div>
 </footer>
 
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
 </body>
 </html>
