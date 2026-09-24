@@ -141,3 +141,16 @@ if (toTop) {
   window.addEventListener('scroll', () => toTop.classList.toggle('visible', window.scrollY > 600), { passive: true });
   toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
+
+// ---------- Site-wide visit counter (GoatCounter) ----------
+const visitCounterEl = document.getElementById('visitCounter');
+if (visitCounterEl) {
+  fetch('https://hassannawaz.goatcounter.com/counter/TOTAL.json')
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((data) => {
+      visitCounterEl.textContent = `· ${data.count} site visits`;
+    })
+    .catch(() => {
+      // Counter not enabled yet, or blocked by an ad blocker — fail silently.
+    });
+}
